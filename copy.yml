@@ -8,5 +8,3 @@
       file: path=/home/osboxes/rpmbuild/SOURCES/cm_2.5.tar.gz mode=0777
     - name: Execute the rpmbuild command
       shell:  rpmbuild -bs /home/osboxes/rpmbuild/SPECS/quagga.spec >> /tmp/output.txt
-    - name: Execute the mock build
-      shell:  mock -r epel-7-x86_64 rebuild /homerpmbuild command/osboxes/rpmbuild/SRPMS/quagga-0.99.23.1-cl2.5+2.src.rpm

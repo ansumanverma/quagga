@@ -5,7 +5,7 @@
     - name: Copy the file
       copy: src=/tmp/cm_2.5.tar.gz dest=/home/osboxes/rpmbuild/SOURCES/cm_2.5.tar.gz
     - name: Fix permissions
-      file: path=/home/osboxes/rpmbuild/cm_2.5.tar.gz mode=0777 state: touch
+      file: path=/home/osboxes/rpmbuild/cm_2.5.tar.gz mode=0777
     - name: Execute the rpmbuild command
       shell:  rpmbuild -bs /home/osboxes/rpmbuild/SPECS/quagga.spec >> /tmp/output.txt
     - name: Execute the mock build
